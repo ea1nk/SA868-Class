@@ -11,6 +11,7 @@ class SA868 {
   }
 
   connect() {
+    //Defaults to 144.800MHz APRS EU frequency, squelch to level 4, no tones
     this.serialPort.write('AT+DMOSETGROUP=0,145.8000,145.8000,0000,4,0000\r');
     this.serialPort.on('data', (data) => this.handleData(data));
     this.serialPort.on('error', (error) => this.handleError(error));
