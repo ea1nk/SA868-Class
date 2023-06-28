@@ -2,6 +2,10 @@
 2023 - SCQ Devices / EA1NK
 SA868 V-UHF Module NodeJS Class
 
+### Description:
+Simple class in NodeJS to control a SA868 based V/UHF module.
+The provided code initializes the module to 145.800 (APRS EU frequency) and high power
+
 ### Usage:
 ```
 const SA868 = require ("./sa868.js")
